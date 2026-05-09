@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0B1426" />
+  <meta name="description" content="WinX Business — tài khoản vận hành AI cho doanh nghiệp Việt Nam. Hỗ trợ bởi Techcombank và dữ liệu thương mại Masan." />
+  <meta property="og:title" content="WinX Business · Tài khoản kinh doanh hiểu rõ cửa hàng của bạn" />
+  <meta property="og:description" content="Thu chi, phân quyền nhân viên, đối soát công nợ, và tín dụng do AI đề xuất. Powered by Techcombank x Masan Commerce." />
+  <meta property="og:type" content="website" />
+  <title>WinX Business · Tài khoản vận hành cho doanh nghiệp Việt Nam</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23C73E3A'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='32' fill='white'>X</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ================== TOP NAV ================== -->
+<header class="nav" id="topnav">
+  <div class="nav-inner">
+    <a class="brand" href="#hero" aria-label="WinX Business">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 36 36" width="28" height="28">
+          <rect width="36" height="36" rx="9" fill="currentColor"/>
+          <path d="M9 11l4.5 14M22.5 11L18 25M14 11l4 8 4-8" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">WinX</span>
+        <span class="brand-suffix">Business</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Mục lục">
+      <a href="#scene-1">Mở tài khoản</a>
+      <a href="#scene-3">POS &amp; QR</a>
+      <a href="#scene-4">Dashboard</a>
+      <a href="#scene-6">Trợ lý AI</a>
+      <a href="#scene-7">Tín dụng TCB</a>
+      <a href="#scene-8">Tuân thủ</a>
+    </nav>
+    <div class="nav-cta">
+      <span class="pill pill-soft">Demo nội bộ · Phase 0</span>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Mở mục lục" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================== HERO ================== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="grid-mesh"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot"></span> Powered by Techcombank x Masan Commerce</span>
+      <h1 class="hero-title">
+        Tài khoản kinh doanh<br/>
+        <span class="ink-accent">hiểu rõ cửa hàng</span> của bạn.
+      </h1>
+      <p class="hero-sub">
+        WinX Business là tài khoản vận hành dành cho doanh nghiệp Việt Nam. Thu chi, phân quyền nhân viên,
+        theo dõi bán hàng, đối soát công nợ, và tiếp cận tín dụng do AI đề xuất — trên một nền tảng duy nhất,
+        kết nối thẳng vào Techcombank và mạng lưới thương mại Masan.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#intro">
+          Khám phá demo
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#scene-1">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Xem 12 phút
+        </a>
+      </div>
+
+      <div class="hero-strip">
+        <div class="strip-item"><span class="strip-num">3 phút</span><span class="strip-cap">Mở tài khoản</span></div>
+        <div class="strip-item"><span class="strip-num">100%</span><span class="strip-cap">Đối soát tự động</span></div>
+        <div class="strip-item"><span class="strip-num">B+</span><span class="strip-cap">Hạng rủi ro TCB</span></div>
+        <div class="strip-item"><span class="strip-num">100tr</span><span class="strip-cap">Vốn lưu động đề xuất</span></div>
+      </div>
+    </div>
+
+    <!-- HERO MOCKUP -->
+    <div class="hero-mockup" aria-hidden="true">
+      <div class="phone-frame phone-hero">
+        <div class="phone-bezel"></div>
+        <div class="phone-island"></div>
+        <div class="phone-screen">
+          <div class="appbar">
+            <div class="appbar-greet">
+              <span class="appbar-hello">Chào cô Minh Anh</span>
+              <span class="appbar-store">Tạp hóa Minh Anh · Bình Tân</span>
+            </div>
+            <div class="appbar-avatar">MA</div>
+          </div>
+          <div class="balance-card">
+            <span class="balance-label">Số dư tài khoản TCB Business</span>
+            <span class="balance-value">42.180.000 <small>₫</small></span>
+            <div class="balance-meta">
+              <span class="meta-tag meta-up">▲ 8,42tr hôm nay</span>
+              <span class="meta-tag">VA · 3 tài khoản thu</span>
+            </div>
+          </div>
+          <div class="quick-actions">
+            <div class="qa"><span class="qa-ic">↓</span><span>Thu</span></div>
+            <div class="qa"><span class="qa-ic">↑</span><span>Chi</span></div>
+            <div class="qa"><span class="qa-ic">⊞</span><span>QR</span></div>
+            <div class="qa"><span class="qa-ic">✦</span><span>AI</span></div>
+          </div>
+          <div class="mini-section">
+            <div class="mini-title">Hôm nay</div>
+            <div class="mini-row"><span>Doanh số POS</span><strong>8.420.000 ₫</strong></div>
+            <div class="mini-row"><span>Thu QR · TCB</span><strong>5.130.000 ₫</strong></div>
+            <div class="mini-row"><span>Tiền mặt ghi nhận</span><strong>2.740.000 ₫</strong></div>
+          </div>
+          <div class="ai-chip">
+            <span class="ai-dot"></span>
+            <span class="ai-text">Trợ lý AI: phát hiện chênh lệch tiền mặt 550k trong ca chiều.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating cards around the hero phone -->
+      <div class="float-card float-credit">
+        <span class="fc-eyebrow">Tín dụng TCB</span>
+        <span class="fc-value">100 triệu ₫</span>
+        <span class="fc-cap">Hạn mức vốn lưu động · B+</span>
+      </div>
+      <div class="float-card float-pay">
+        <span class="fc-eyebrow">Đã nhận · POS</span>
+        <span class="fc-value">+ 186.000 ₫</span>
+        <span class="fc-cap">HĐ #WX-00192 · Lan thu</span>
+      </div>
+      <div class="float-card float-ai">
+        <span class="fc-eyebrow"><span class="ai-dot"></span> AI gợi ý</span>
+        <span class="fc-cap fc-cap-bold">"Hoãn NCC đá viên 2 ngày, trả NPP MCH hôm nay để giữ điểm tín dụng."</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-trust">
+    <span class="trust-cap">Tích hợp với</span>
+    <div class="trust-row">
+      <span class="trust-logo">Techcombank</span>
+      <span class="trust-sep"></span>
+      <span class="trust-logo">WinX POS</span>
+      <span class="trust-sep"></span>
+      <span class="trust-logo">MCH Distributor</span>
+      <span class="trust-sep"></span>
+      <span class="trust-logo">VietQR</span>
+      <span class="trust-sep"></span>
+      <span class="trust-logo">Masan Commerce</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================== INTRO STORY ================== -->
+<section class="intro" id="intro">
+  <div class="container intro-grid">
+    <div class="intro-left">
+      <div class="persona-card">
+        <div class="persona-photo" aria-hidden="true">
+          <svg viewBox="0 0 120 120" width="120" height="120">
+            <defs>
+              <linearGradient id="pg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#F4D9C8"/><stop offset="1" stop-color="#E0B59C"/></linearGradient>
+            </defs>
+            <circle cx="60" cy="60" r="60" fill="url(#pg)"/>
+            <circle cx="60" cy="48" r="20" fill="#3A2418" opacity="0.85"/>
+            <path d="M20 110 Q60 70 100 110 Z" fill="#3A2418" opacity="0.85"/>
+          </svg>
+        </div>
+        <div class="persona-meta">
+          <span class="persona-name">Cô Minh Anh</span>
+          <span class="persona-role">Chủ Tạp hóa Minh Anh · Bình Tân, TP.HCM</span>
+          <ul class="persona-facts">
+            <li>Bán MCH, nước giải khát, sữa, hàng tươi, hàng tiêu dùng</li>
+            <li>Dùng WinX POS · 3 nhân viên</li>
+            <li>Mua hàng từ NPP MCH · thu khách qua QR &amp; tiền mặt</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="intro-right">
+      <h2 class="section-title">Gặp cô Minh Anh.</h2>
+      <p class="section-lede">
+        Tạp hóa Minh Anh là một trong 50.000 cửa hàng thuộc mạng lưới WinX POS. Cô bán hàng MCH,
+        thu tiền khách qua QR và tiền mặt, mua hàng từ nhà phân phối MCH, trả lương nhân viên,
+        và mong muốn có thêm vốn lưu động cho mùa cao điểm.
+      </p>
+
+      <div class="contrast-row">
+        <div class="contrast-card contrast-yesterday">
+          <span class="contrast-tag">Hôm qua</span>
+          <p>Tiền mặt, chuyển khoản tài khoản cá nhân, tin nhắn Zalo, file Excel, và trí nhớ.</p>
+        </div>
+        <div class="contrast-arrow" aria-hidden="true">→</div>
+        <div class="contrast-card contrast-today">
+          <span class="contrast-tag contrast-tag-on">Hôm nay</span>
+          <p>Tài khoản kinh doanh thực sự, kiểm soát nhân viên, đường thu chi minh bạch, dashboard bán hàng,
+            trợ lý tài chính AI, và đủ điều kiện vay vốn TCB từ chính dữ liệu kinh doanh.</p>
+        </div>
+      </div>
+
+      <div class="quote-bar">
+        <span class="quote-mark">"</span>
+        <p>Đây không phải là MoMo. Đây là <strong>hệ điều hành tài chính của các tiểu thương</strong> đã có sẵn trong mạng Masan + TCB + WinX POS.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SCENE 1: ONBOARDING ================== -->
+<section class="scene scene-light" id="scene-1" data-scene="1">
+  <div class="container scene-grid">
+    <div class="scene-copy">
+      <div class="scene-num">Cảnh 01</div>
+      <h2 class="section-title">Mở tài khoản trong <span class="ink-accent">3 phút</span>.</h2>
+      <p class="section-lede">
+        Cô Minh Anh nhập tên hộ kinh doanh, mã số thuế, xác minh CCCD, liên kết cửa hàng WinX POS,
+        và chọn loại tài khoản. Tất cả dữ liệu được Techcombank xử lý theo chuẩn KYB &amp; bảo mật cấp 3.
+      </p>
+
+      <div class="why-card">
+        <span class="why-tag">Vì sao quan trọng</span>
+        <p>Đây không phải là một ví thanh toán. Đây là một <strong>tài khoản doanh nghiệp do TCB nắm giữ</strong>,
+          với nhiều tài khoản thu hộ ảo (VA) phục vụ cho từng kênh bán: tại cửa hàng, đơn online, và nhân viên thu hộ.</p>
+      </div>
+
+      <div class="arch-callout">
+        <div class="arch-row"><span>Tiền giữ ở</span><strong>Techcombank</strong></div>
+        <div class="arch-row"><span>Chủ tài khoản</span><strong>HKD Tạp hóa Minh Anh</strong></div>
+        <div class="arch-row"><span>Vai trò WinX</span><strong>Phần mềm · quy trình · đối soát · AI</strong></div>
+        <div class="arch-row arch-row-muted"><span>Vai trò MBC</span><strong>Module thu/chi hộ · sẽ kích hoạt sau</strong></div>
+      </div>
+
+      <div class="wow-line">
+        <span class="wow-bullet">✓</span>
+        <p><strong>Khoảnh khắc "wow":</strong> "Tài khoản WinX Business đã sẵn sàng. 3 tài khoản thu hộ đã tạo: QR cửa hàng, đơn online, nhân viên thu hộ."</p>
+      </div>
+    </div>
+
+    <div class="scene-mockup">
+      <div class="phone-frame" id="phone-onboard">
+        <div class="phone-bezel"></div>
+        <div class="phone-island"></div>
+        <div class="phone-screen onboard-screen">
+
+          <div class="ob-header">
+            <span class="ob-step" data-step="1">Bước 1/4</span>
+            <span class="ob-title">Mở tài khoản WinX Business</span>
+          </div>
+
+          <div class="ob-stage" id="obStage">
+            <!-- Step 1 -->
+            <div class="ob-step-pane is-active" data-pane="1">
+              <label class="ob-label">Tên hộ kinh doanh</label>
+              <div class="ob-input ob-filled">Tạp hóa Minh Anh</div>
+              <label class="ob-label">Mã số thuế</label>
+              <div class="ob-input ob-filled">8101 234 567</div>
+              <label class="ob-label">Địa chỉ cửa hàng</label>
+              <div class="ob-input ob-filled">123 Hồ Học Lãm, Q. Bình Tân, TP.HCM</div>
+            </div>
+            <!-- Step 2 -->
+            <div class="ob-step-pane" data-pane="2">
+              <label class="ob-label">CCCD chủ hộ kinh doanh</label>
+              <div class="ob-id-card">
+                <div class="ob-id-photo" aria-hidden="true">
+                  <svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="30" fill="#F4D9C8"/><circle cx="30" cy="24" r="10" fill="#3A2418" opacity=".85"/><path d="M10 55 Q30 35 50 55 Z" fill="#3A2418" opacity=".85"/></svg>
+                </div>
+                <div class="ob-id-meta">
+                  <span class="ob-id-name">NGUYỄN THỊ MINH ANH</span>
+                  <span class="ob-id-line">079 1**  ****  ****</span>
+                  <span class="ob-id-line">Sinh: 12/04/1981 · Nữ</span>
+                  <span class="ob-id-check"><span class="ok-dot">✓</span> Khớp với hồ sơ TCB</span>
+                </div>
+              </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="ob-step-pane" data-pane="3">
+              <label class="ob-label">Liên kết cửa hàng WinX POS</label>
+              <div class="ob-pos-card">
+                <span class="ob-pos-id">WX-POS-00872</span>
+                <span class="ob-pos-name">Tạp hóa Minh Anh</span>
+                <span class="ob-pos-meta">3 nhân viên · 90 ngày dữ liệu bán hàng</span>
+                <span class="ob-pos-tag"><span class="ok-dot">✓</span> Đã liên kết</span>
+              </div>
+              <label class="ob-label">Lịch sử mua hàng MCH</label>
+              <div class="ob-input ob-filled">210 triệu ₫ trong 90 ngày · NPP MCH HCMC-07</div>
+            </div>
+            <!-- Step 4 -->
+            <div class="ob-step-pane" data-pane="4">
+              <label class="ob-label">Chọn loại tài khoản</label>
+              <div class="ob-acct ob-acct-on">
+                <span class="ob-acct-check">●</span>
+                <div>
+                  <strong>Tài khoản TCB Business</strong>
+                  <span>Tài khoản chính · do Techcombank giữ</span>
+                </div>
+              </div>
+              <div class="ob-acct ob-acct-on">
+                <span class="ob-acct-check">●</span>
+                <div>
+                  <strong>3 tài khoản thu hộ ảo (VA)</strong>
+                  <span>QR cửa hàng · đơn online · nhân viên thu hộ</span>
+                </div>
+              </div>
+              <div class="ob-acct ob-acct-off">
+                <span class="ob-acct-check">○</span>
+                <div>
+                  <strong>Tài khoản thu/chi hộ MBC</strong>
+                  <span>Chưa dùng trong Phase 0 · sẽ kích hoạt sau</span>
+                </div>
+              </div>
+            </div>
+            <!-- Step 5: success -->
+            <div class="ob-step-pane ob-success" data-pane="5">
+              <div class="ob-tick"><svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 24l7 7 13-15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3>Tài khoản đã sẵn sàng</h3>
+              <p>3 tài khoản thu hộ đã được tạo:</p>
+              <div class="ob-va-list">
+                <div class="ob-va"><span>VA-01 · QR cửa hàng</span><strong>9821 0001 9872</strong></div>
+                <div class="ob-va"><span>VA-02 · Đơn online</span><strong>9821 0002 9872</strong></div>
+                <div class="ob-va"><span>VA-03 · Nhân viên thu hộ</span><strong>9821 0003 9872</strong></div>
+              </div>
+              <span class="ob-bank-tag">Tiền giữ ở Techcombank · WinX = phần mềm vận hành</span>
+            </div>
+          </div>
+
+          <div class="ob-footer">
+            <button class="ob-prev" id="obPrev">← Quay lại</button>
+            <button class="ob-next btn-primary" id="obNext">Tiếp tục</button>
+          </div>
+        </div>
+      </div>
+      <span class="mockup-cap">Bấm "Tiếp tục" để chạy lại flow mở tài khoản</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SCENE 2: PERMISSIONS ================== -->
+<section class="scene scene-light" id="scene-2" data-scene="2">
+  <div class="container scene-grid scene-grid-rev">
+    <div class="scene-mockup">
+      <div class="phone-frame">
+        <div class="phone-bezel"></div>
+        <div class="phone-island"></div>
+        <div class="phone-screen perm-screen">
+          <div class="screen-header">
+            <span class="sh-back">←</span>
+            <span class="sh-title">Nhân viên &amp; phân quyền</span>
+            <span class="sh-add">+</span>
+          </div>
+          <div class="staff-grid">
+            <div class="staff-card" data-staff="lan">
+              <div class="staff-avatar staff-pink">L</div>
+              <div class="staff-meta">
+                <span class="staff-name">Lan</span>
+                <span class="staff-role">Thu ngân</span>
+              </div>
+              <div class="staff-perms">
+                <span class="perm perm-on">Thu QR</span>
+                <span class="perm perm-on">Phát mã</span>
+                <span class="perm perm-off">Chuyển tiền</span>
+                <span class="perm perm-cap">Hoàn ≤ 300k/ngày</span>
+              </div>
+            </div>
+            <div class="staff-card" data-staff="huy">
+              <div class="staff-avatar staff-blue">H</div>
+              <div class="staff-meta">
+                <span class="staff-name">Huy</span>
+                <span class="staff-role">Bán hàng</span>
+              </div>
+              <div class="staff-perms">
+                <span class="perm perm-on">Thu KH</span>
+                <span class="perm perm-on">Xem DS riêng</span>
+                <span class="perm perm-off">Xem tổng quỹ</span>
+              </div>
+            </div>
+            <div class="staff-card" data-staff="mai">
+              <div class="staff-avatar staff-green">M</div>
+              <div class="staff-meta">
+                <span class="staff-name">Mai</span>
+                <span class="staff-role">Kế toán</span>
+              </div>
+              <div class="staff-perms">
+                <span class="perm perm-on">Soạn lệnh chi</span>
+                <span class="perm perm-cap">Không phê duyệt &gt; 5tr</span>
+              </div>
+            </div>
+            <div class="staff-card staff-owner" data-staff="owner">
+              <div class="staff-avatar staff-gold">MA</div>
+              <div class="staff-meta">
+                <span class="staff-name">Cô Minh Anh</span>
+                <span class="staff-role">Chủ cửa hàng</span>
+              </div>
+              <div class="staff-perms">
+                <span class="perm perm-on perm-strong">Phê duyệt mọi giao dịch &gt; 5tr</span>
+                <span class="perm perm-on">Toàn quyền</span>
+              </div>
+            </div>
+          </div>
+          <div class="perm-toast">
+            <span class="ok-dot">✓</span>
+            <span>Lan có thể thu tiền qua QR cửa hàng nhưng không thể chuyển tiền ra ngoài.</span>
+          </div>
+        </div>
+      </div>
+      <span class="mockup-cap">Quyền cấp theo vai trò · ghi log mọi thao tác</span>
+    </div>
+
+    <div class="scene-copy">
+      <div class="scene-num">Cảnh 02</div>
+      <h2 class="section-title">Phân quyền nhân viên <span class="ink-accent">đến từng giao dịch.</span></h2>
+      <p class="section-lede">
+        Trong cửa hàng nhỏ tại Việt Nam, "ai có quyền nhìn và chuyển tiền" là một nỗi đau thực sự.
+        Phần lớn chủ cửa hàng vận hành qua app cá nhân và niềm tin. WinX Business mang lại kiểm soát thực sự —
+        từng nhân viên, từng quyền, từng hạn mức.
+      </p>
+
+      <div class="why-card">
+        <span class="why-tag">Vì sao quan trọng</span>
+        <p>Đây không phải tính năng ví. Đây là <strong>kiểm soát vận hành SME</strong>: ai thu, ai chi, ai duyệt — và mọi thứ ghi log.</p>
+      </div>
+
+      <div class="role-grid">
+        <div class="role-row"><span class="role-tag role-cashier">Thu ngân</span><span>Thu tiền · phát mã QR · không chuyển khoản · hoàn tối đa 300k/ngày</span></div>
+        <div class="role-row"><span class="role-tag role-sales">Bán hàng</span><span>Thu khách · xem doanh số riêng · không xem tổng quỹ</span></div>
+        <div class="role-row"><span class="role-tag role-acct">Kế toán</span><span>Soạn lệnh chi NCC · không tự phê duyệt &gt; 5tr</span></div>
+        <div class="role-row"><span class="role-tag role-owner">Chủ</span><span>Phê duyệt mọi lệnh chi &gt; 5tr · toàn quyền</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SCENE 3: POS CHECKOUT + QR ================== -->
+<section class="scene scene-dark" id="scene-3" data-scene="3">
+  <div class="scene-glow"></div>
+  <div class="container">
+    <div class="scene-header center">
+      <div class="scene-num scene-num-on-dark">Cảnh 03</div>
+      <h2 class="section-title section-title-light">Khách quét QR. <span class="ink-coral">Cửa hàng nhận đầy đủ ngữ cảnh.</span></h2>
+      <p class="section-lede section-lede-light">
+        Tiền là sự kiện cuối cùng. Trước đó là giỏ hàng, hóa đơn, nhân viên thu, khuyến mãi MCH, tồn kho.
+        WinX Business gắn tất cả vào một giao dịch — không phải một đường tiền trống.
+      </p>
+    </div>
+
+    <div class="pos-stage">
+      <!-- POS tablet -->
+      <div class="tablet-frame">
+        <div class="tablet-screen">
+          <div class="pos-topbar">
+            <div class="pos-store">
+              <span class="pos-store-name">Tạp hóa Minh Anh</span>
+              <span class="pos-store-meta">POS-00872 · Lan thu</span>
+            </div>
+            <span class="pos-time" id="posTime">15:42</span>
+          </div>
+
+          <div class="pos-body">
+            <div class="pos-cart">
+              <div class="pos-cart-title">Giỏ hàng</div>
+              <div class="pos-line"><span class="pos-line-name">Mì Omachi sườn hầm</span><span class="pos-line-qty">x2</span><span class="pos-line-amt">22.000</span></div>
+              <div class="pos-line"><span class="pos-line-name">Nước mắm Chinsu cá cơm</span><span class="pos-line-qty">x1</span><span class="pos-line-amt">38.000</span></div>
+              <div class="pos-line"><span class="pos-line-name">Wake-Up 247</span><span class="pos-line-qty">x3</span><span class="pos-line-amt">36.000</span></div>
+              <div class="pos-line"><span class="pos-line-name">Vinacafé hòa tan 3in1</span><span class="pos-line-qty">x1</span><span class="pos-line-amt">90.000</span></div>
+              <div class="pos-line pos-line-promo"><span class="pos-line-name">KM MCH "Tết Sum Vầy" tài trợ</span><span class="pos-line-qty"></span><span class="pos-line-amt">- 5.000</span></div>
+              <div class="pos-total">
+                <span>Tổng thanh toán</span>
+                <strong>186.000 ₫</strong>
+              </div>
+              <button class="btn-collect" id="posCollect">Thu tiền với WinX Business</button>
+            </div>
+
+            <div class="pos-qr" id="posQr">
+              <div class="qr-empty" id="qrEmpty">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M21 14v3M17 21h4M14 18v3"/></svg>
+                <span>Bấm "Thu tiền" để tạo VietQR động</span>
+              </div>
+              <div class="qr-card" id="qrCard">
+                <div class="qr-head">
+                  <span class="qr-vqr-mark">VietQR</span>
+                  <span class="qr-amount">186.000 ₫</span>
+                </div>
+                <div class="qr-art" aria-hidden="true">
+                  <!-- Stylized QR pattern -->
+                  <div class="qr-grid"></div>
+                  <div class="qr-corner qr-c-tl"></div>
+                  <div class="qr-corner qr-c-tr"></div>
+                  <div class="qr-corner qr-c-bl"></div>
+                  <div class="qr-logo">X</div>
+                  <div class="qr-scan-bar"></div>
+                </div>
+                <div class="qr-meta">
+                  <span>Đến: VA-01 QR cửa hàng</span>
+                  <span>Hóa đơn #WX-00192 · Lan</span>
+                </div>
+                <button class="btn-scan" id="btnScan">Khách quét &amp; trả</button>
+              </div>
+              <div class="qr-success" id="qrSuccess">
+                <div class="qr-tick"><svg viewBox="0 0 48 48" width="40" height="40"><circle cx="24" cy="24" r="22" fill="currentColor" opacity=".15"/><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M14 24l7 7 13-15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <span class="qr-success-amt">+ 186.000 ₫</span>
+                <span class="qr-success-cap">Đã thanh toán qua TCB · 1,2 giây</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pos-bottom" id="posBottom">
+            <div class="pb-row"><span>Đã nhận</span><strong>186.000 ₫ · Bank QR</strong></div>
+            <div class="pb-row"><span>Hóa đơn</span><strong>#WX-00192</strong></div>
+            <div class="pb-row"><span>Người thu</span><strong>Lan (Thu ngân)</strong></div>
+            <div class="pb-row"><span>Khuyến mãi MCH tài trợ</span><strong>5.000 ₫</strong></div>
+            <div class="pb-row"><span>Biên lợi nhuận ước tính</span><strong>14,8%</strong></div>
+            <div class="pb-row"><span>Tồn kho</span><strong class="ok-text">✓ Đã cập nhật</strong></div>
+            <div class="pb-row"><span>Đối soát TCB</span><strong class="ok-text">✓ Tự động</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side-by-side compare -->
+    <div class="compare-grid">
+      <div class="compare-card compare-plain">
+        <span class="compare-label">VietQR thông thường</span>
+        <div class="compare-line"><span>Đã nhận</span><strong>186.000 ₫</strong></div>
+        <div class="compare-empty">không hóa đơn · không nhân viên · không giỏ hàng · không khuyến mãi · không tồn kho · không biên lợi nhuận · không đối soát</div>
+      </div>
+      <div class="compare-card compare-winx">
+        <span class="compare-label compare-label-on">WinX Business</span>
+        <div class="compare-line"><span>Đã nhận</span><strong>186.000 ₫</strong></div>
+        <div class="compare-line"><span>từ hóa đơn</span><strong>#WX-00192</strong></div>
+        <div class="compare-line"><span>bán bởi</span><strong>Lan (Thu ngân)</strong></div>
+        <div class="compare-line"><span>giỏ</span><strong>7 SKU</strong></div>
+        <div class="compare-line"><span>KM tài trợ MCH</span><strong>5.000 ₫</strong></div>
+        <div class="compare-line"><span>biên lợi nhuận</span><strong>14,8%</strong></div>
+        <div class="compare-line"><span>tồn kho</span><strong>cập nhật</strong></div>
+        <div class="compare-line"><span>đối soát TCB</span><strong>tự động</strong></div>
+      </div>
+    </div>
+
+    <div class="why-card why-card-dark">
+      <span class="why-tag why-tag-dark">Vì sao quan trọng</span>
+      <p>Thanh toán không phải là phép màu. Phép màu là: <strong>giỏ hàng + nhân viên + hóa đơn + thanh toán + KM + đối soát</strong> — gắn vào một sự kiện duy nhất.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SCENE 4: OWNER DASHBOARD ================== -->
+<section class="scene scene-dark scene-dash" id="scene-4" data-scene="4">
+  <div class="container">
+    <div class="scene-header center">
+      <div class="scene-num scene-num-on-dark">Cảnh 04</div>
+      <h2 class="section-title section-title-light">Dashboard chủ cửa hàng. <span class="ink-coral">9 giờ tối, mở app.</span></h2>
+      <p class="section-lede section-lede-light">
+        Cô Minh Anh đóng cửa, ngồi xuống. Một màn hình duy nhất cho biết hôm nay đã bán bao nhiêu, ai bán,
+        tiền đã về đúng chưa, và ngày mai phải trả ai.
+      </p>
+    </div>
+
+    <div class="dash-panel">
+      <div class="dash-header">
+        <div class="dash-title">
+          <span class="dash-store">Tạp hóa Minh Anh</span>
+          <span class="dash-date" id="dashDate">Thứ Bảy · 09/05/2026 · 21:08</span>
+        </div>
+        <div class="dash-actions">
+          <span class="pill pill-dark">Hôm nay</span>
+          <span class="pill pill-dark-ghost">Tuần</span>
+          <span class="pill pill-dark-ghost">Tháng</span>
+        </div>
+      </div>
+
+      <div class="kpi-row">
+        <div class="kpi">
+          <span class="kpi-label">Doanh số hôm nay</span>
+          <span class="kpi-value" data-counter="8420000">8.420.000 ₫</span>
+          <span class="kpi-delta kpi-up">▲ 12,4% so hôm qua</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi-label">QR thu được · TCB</span>
+          <span class="kpi-value" data-counter="5130000">5.130.000 ₫</span>
+          <span class="kpi-delta">61% giao dịch</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi-label">Tiền mặt ghi nhận</span>
+          <span class="kpi-value" data-counter="2740000">2.740.000 ₫</span>
+          <span class="kpi-delta kpi-warn">▼ chênh 550k chưa đối soát</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi-label">Hạn mức TCB ước tính</span>
+          <span class="kpi-value">80–110 <small>tr ₫</small></span>
+          <span class="kpi-delta kpi-positive">B+ · pre-approved</span>
+        </div>
+      </div>
+
+      <div class="dash-grid">
+        <!-- Sales by hour chart -->
+        <div class="dash-card dash-card-wide">
+          <div class="dash-card-head">
+            <span class="dch-title">Doanh số theo giờ</span>
+            <span class="dch-meta">9:00 – 21:00</span>
+          </div>
+          <div class="bars" id="bars">
+            <div class="bar" style="--h:18%"><span>09</span></div>
+            <div class="bar" style="--h:25%"><span>10</span></div>
+            <div class="bar" style="--h:32%"><span>11</span></div>
+            <div class="bar" style="--h:48%"><span>12</span></div>
+            <div class="bar" style="--h:38%"><span>13</span></div>
+            <div class="bar" style="--h:30%"><span>14</span></div>
+            <div class="bar" style="--h:42%"><span>15</span></div>
+            <div class="bar" style="--h:55%"><span>16</span></div>
+            <div class="bar bar-warn" style="--h:78%"><span>17</span></div>
+            <div class="bar bar-warn" style="--h:85%"><span>18</span></div>
+            <div class="bar" style="--h:72%"><span>19</span></div>
+            <div class="bar" style="--h:60%"><span>20</span></div>
+            <div class="bar" style="--h:38%"><span>21</span></div>
+          </div>
+          <div class="bars-note"><span class="ok-dot ok-warn">!</span> Khung 17-18h: chênh tiền mặt 550k</div>
+        </div>
+
+        <!-- Top SKUs -->
+        <div class="dash-card">
+          <div class="dash-card-head"><span class="dch-title">SKU bán chạy</span></div>
+          <div class="sku-row"><span class="sku-rank">1</span><span class="sku-name">Mì Omachi sườn hầm</span><strong>1.420.000 ₫</strong></div>
+          <div class="sku-row"><span class="sku-rank">2</span><span class="sku-name">Chinsu cá cơm</span><strong>980.000 ₫</strong></div>
+          <div class="sku-row"><span class="sku-rank">3</span><span class="sku-name">Wake-Up 247</span><strong>720.000 ₫</strong></div>
+          <div class="sku-row"><span class="sku-rank">4</span><span class="sku-name">Vinacafé 3in1</span><strong>540.000 ₫</strong></div>
+          <div class="sku-row sku-row-low"><span class="sku-rank">↓</span><span class="sku-name">SKU X (chậm)</span><strong>tồn 38 ngày</strong></div>
+        </div>
+
+        <!-- Top staff -->
+        <div class="dash-card">
+          <div class="dash-card-head"><span class="dch-title">Hiệu suất nhân viên</span></div>
+          <div class="staff-bar">
+            <div class="sb-row"><span class="sb-name">Lan</span><div class="sb-track"><div class="sb-fill" style="--w:88%"></div></div><strong>3,21tr</strong></div>
+            <div class="sb-row"><span class="sb-name">Huy</span><div class="sb-track"><div class="sb-fill" style="--w:62%"></div></div><strong>2,28tr</strong></div>
+            <div class="sb-row"><span class="sb-name">Nam</span><div class="sb-track"><div class="sb-fill" style="--w:48%"></div></div><strong>1,77tr</strong></div>
+            <div class="sb-row sb-row-warn"><span class="sb-name">Huy · refund</span><div class="sb-track"><div class="sb-fill sb-fill-warn" style="--w:80%"></div></div><strong>2,3x TB</strong></div>
+          </div>
+        </div>
+
+        <!-- Cash runway -->
+        <div class="dash-card">
+          <div class="dash-card-head"><span class="dch-title">Dòng tiền &amp; công nợ</span></div>
+          <div class="dash-list">
+            <div class="dl-row"><span>NCC phải trả ngày mai</span><strong>14.600.000 ₫</strong></div>
+            <div class="dl-row"><span>Phải trả 7 ngày tới</span><strong>42.100.000 ₫</strong></div>
+            <div class="dl-row"><span>Thu dự kiến 7 ngày</span><strong>36.800.000 ₫</strong></div>
+            <div class="dl-row dl-row-strong"><span>Số ngày tiền mặt còn</span><strong>6,5 ngày</strong></div>
+          </div>
+        </div>
+
+        <!-- AI alert -->
+        <div class="dash-card dash-card-ai">
+          <div class="dash-card-head"><span class="dch-title"><span class="ai-dot"></span> Cảnh báo AI</span></div>
+          <p class="ai-msg">
+            Doanh số tiền mặt thấp hơn POS <strong>550.000 ₫</strong> hôm nay.
+            Chênh lệch lớn nhất xảy ra <strong>17:00 – 18:00 trong ca của Lan</strong>.
+          </p>
+          <div class="ai-actions">
+            <button class="btn-pill btn-pill-on">Xem 3 hóa đơn</button>
+            <button class="btn-pill">Hỏi Lan qua chat</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-card why-card-dark">
+      <span class="why-tag why-tag-dark">Vì sao quan trọng</span>
+      <p>Đây là khoảnh khắc người ta hiểu sản phẩm. Không phải "thêm một wallet" — đây là <strong>màn hình điều khiển vận hành</strong> dành cho chủ cửa hàng, dựa trên dữ liệu mà chỉ WinX có.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SCENE 5: PAY SUPPLIER ================== -->
+<section class="scene scene-light" id="scene-5" data-scene="5">
+  <div class="container scene-grid">
+    <div class="scene-copy">
+      <div class="scene-num">Cảnh 05</div>
+      <h2 class="section-title">Trả nhà cung cấp với <span class="ink-accent">phê duyệt &amp; khớp hóa đơn</span>.</h2>
+      <p class="section-lede">
+        Mai (kế toán) soạn lệnh chi NPP MCH. Hệ thống tự động khớp hóa đơn, kiểm tra hàng đã nhận,
+        và phát hiện chiết khấu chờ. Vì giá trị &gt; 5 triệu, chủ cửa hàng phải phê duyệt.
+      </p>
+
+      <div class="why-card">
+        <span class="why-tag">Vì sao quan trọng</span>
+        <p>Đây là <strong>quy trình tài chính có kiểm soát</strong>: hóa đơn-khớp-thanh toán, không phải lệnh chuyển khoản trống. Mọi bước được ghi log, mọi chiết khấu được áp dụng tự động.</p>
+      </div>
+
+      <div class="ai-suggest">
+        <div class="ai-suggest-head"><span class="ai-dot"></span> Trợ lý AI</div>
+        <p class="ai-suggest-body">
+          "Bạn có thể <strong>hoãn NCC đá viên 2 ngày</strong> mà không bị phạt, nhưng nên
+          <strong>trả NPP MCH hôm nay</strong> để giữ điểm tín dụng nhà phân phối."
+        </p>
+      </div>
+
+      <div class="wow-line">
+        <span class="wow-bullet">✓</span>
+        <p><strong>Khoảnh khắc "wow":</strong> AI đề xuất số tiền chi <strong>11.980.000 ₫</strong> (sau khi trừ 420k chiết khấu chờ xác nhận từ MCH), thay vì 12.400.000 ₫.</p>
+      </div>
+    </div>
+
+    <div class="scene-mockup">
+      <div class="phone-frame">
+        <div class="phone-bezel"></div>
+        <div class="phone-island"></div>
+        <div class="phone-screen pay-screen">
+          <div class="screen-header">
+            <span class="sh-back">←</span>
+            <span class="sh-title">Công nợ đến hạn</span>
+            <span class="sh-add">⋯</span>
+          </div>
+
+          <div class="pay-list">
+            <div class="pay-item pay-item-active" data-pay="mch">
+              <div class="pay-meta">
+                <span class="pay-name">NPP MCH HCMC-07</span>
+                <span class="pay-inv">Hóa đơn #MCH-4412 · Đến hạn ngày mai</span>
+              </div>
+              <span class="pay-amt pay-amt-strong">12.400.000 ₫</span>
+            </div>
+            <div class="pay-item">
+              <div class="pay-meta">
+                <span class="pay-name">NCC đá viên Bình Tân</span>
+                <span class="pay-inv">Hóa đơn #ICE-221 · Đến hạn ngày mai</span>
+              </div>
+              <span class="pay-amt">1.200.000 ₫</span>
+            </div>
+            <div class="pay-item">
+              <div class="pay-meta">
+                <span class="pay-name">Anh Tâm · giao hàng</span>
+                <span class="pay-inv">Phí vận chuyển tuần · Đến hạn ngày mai</span>
+              </div>
+              <span class="pay-amt">1.000.000 ₫</span>
+            </div>
+          </div>
+
+          <div class="approval-card" id="approvalCard">
+            <div class="ac-head">
+              <span class="ac-tag">Cần chủ phê duyệt</span>
+              <span class="ac-amt">12.400.000 ₫</span>
+            </div>
+            <div class="ac-row"><span>Người nhận</span><strong>NPP MCH HCMC-07</strong></div>
+            <div class="ac-row"><span>Hóa đơn khớp</span><strong class="ok-text">✓ #MCH-4412</strong></div>
+            <div class="ac-row"><span>Hàng đã nhận</span><strong class="ok-text">✓ Xác nhận POS</strong></div>
+            <div class="ac-row"><span>Chiết khấu chờ</span><strong>420.000 ₫</strong></div>
+            <div class="ac-recommend">
+              <span class="ac-rec-tag">AI đề xuất</span>
+              <strong>Trả ròng 11.980.000 ₫</strong>
+              <span class="ac-rec-cap">(sau khi trừ chiết khấu chờ xác nhận)</span>
+            </div>
+            <div class="ac-buttons">
+              <button class="btn-ghost-sm">Xem chi tiết</button>
+              <button class="btn-approve" id="btnApprove">Phê duyệt &amp; chi</button>
+            </div>
+            <div class="ac-success" id="acSuccess">
+              <span class="ok-dot ok-strong">✓</span>
+              <div>
+                <strong>Đã chi 11.980.000 ₫</strong>
+                <span>Qua TCB · Hoàn tất 1,8 giây · Log #LG-AC-7741</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="mockup-cap">Bấm "Phê duyệt &amp; chi" để chạy luồng</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SCENE 6: AI WEEKLY REPORT ================== -->
+<section class="scene scene-cream" id="scene-6" data-scene="6">
+  <div class="container">
+    <div class="scene-header center">
+      <div class="scene-num">Cảnh 06</div>
+      <h2 class="section-title">Báo cáo tuần &amp; <span class="ink-accent">trợ lý AI</span>.</h2>
+      <p class="section-lede center">
+        Chủ nhật, 8 giờ tối. Một thẻ báo cáo gọn gàng tóm tắt cả tuần. Cô Minh Anh hỏi AI một câu, AI trả lời như một kế toán hiểu cửa hàng.
+      </p>
+    </div>
+
+    <div class="report-stage">
+      <!-- Weekly report card -->
+      <div class="report-card">
+        <div class="rc-head">
+          <span class="rc-eyebrow">Báo cáo tuần</span>
+          <span class="rc-date">Tuần 19 · 03–09/05/2026</span>
+        </div>
+
+        <div class="rc-hero">
+          <div class="rc-hero-block">
+            <span class="rc-hero-label">Doanh thu</span>
+            <strong class="rc-hero-num">58,3 <small>triệu ₫</small></strong>
+            <span class="rc-hero-delta rc-up">▲ 12,4% WoW</span>
+          </div>
+          <div class="rc-hero-block">
+            <span class="rc-hero-label">Biên ước tính</span>
+            <strong class="rc-hero-num">13,9%</strong>
+            <span class="rc-hero-delta rc-down">▼ 110bps WoW</span>
+          </div>
+        </div>
+
+        <div class="rc-grid">
+          <div class="rc-block">
+            <span class="rc-block-title">Lý do biên giảm</span>
+            <p>Tỷ trọng <strong>nước giải khát tăng</strong>, gia vị giảm. Khuyến mãi MCH đã bù 5% biên cho mì gói &amp; cà phê.</p>
+          </div>
+          <div class="rc-block">
+            <span class="rc-block-title">Nhân viên</span>
+            <ul class="rc-ul">
+              <li>Lan tạo <strong>38%</strong> doanh thu tuần</li>
+              <li>Huy có tỷ lệ hoàn cao <strong>2,3 lần</strong> trung bình</li>
+            </ul>
+          </div>
+          <div class="rc-block">
+            <span class="rc-block-title">Dòng tiền</span>
+            <ul class="rc-ul">
+              <li>Phải trả 7 ngày: <strong>42,1tr ₫</strong></li>
+              <li>Thu dự kiến: <strong>36,8tr ₫</strong></li>
+              <li>Rủi ro thiếu hụt: <span class="rc-tag rc-tag-warn">Trung bình</span></li>
+            </ul>
+          </div>
+          <div class="rc-block">
+            <span class="rc-block-title">Tồn kho</span>
+            <ul class="rc-ul">
+              <li>Omachi sắp hết trong <strong>2,5 ngày</strong></li>
+              <li>SKU X chậm: tồn <strong>38 ngày</strong></li>
+            </ul>
+          </div>
+          <div class="rc-block rc-block-credit">
+            <span class="rc-block-title">Tín dụng</span>
+            <p>TCB pre-approved <strong>80–110 triệu ₫</strong> vốn lưu động.</p>
+            <p>Trả góp ước tính: <strong>8,7 triệu ₫/tháng</strong>.</p>
+            <p class="rc-block-cap">Mục đích đề xuất: nhập hàng trước tuần lễ hội.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat -->
+      <div class="ai-chat">
+        <div class="aic-head">
+          <span class="aic-dot"><span class="ai-dot"></span></span>
+          <div class="aic-meta">
+            <span class="aic-name">Trợ lý WinX</span>
+            <span class="aic-status">đang trực tuyến · trả lời từ dữ liệu cửa hàng của bạn</span>
+          </div>
+        </div>
+
+        <div class="aic-body" id="aicBody">
+          <div class="bubble bubble-user">
+            <p>Tuần này mình có nên nhập thêm <strong>30 triệu</strong> hàng không?</p>
+          </div>
+          <div class="bubble bubble-ai" id="bubbleAI" data-typing>
+            <p>Có thể, nhưng cần một trong hai điều kiện:</p>
+            <ul class="bubble-ul">
+              <li>Rút <strong>80 triệu ₫</strong> từ hạn mức TCB pre-approved, hoặc</li>
+              <li>Hoãn <strong>12 triệu ₫</strong> công nợ không quan trọng (NCC đá viên, anh Tâm giao hàng).</li>
+            </ul>
+            <p>Đề xuất danh mục nhập:</p>
+            <div class="bubble-buy">
+              <div class="buy-row"><span>Mì Omachi (sắp hết)</span><strong>12tr ₫</strong></div>
+              <div class="buy-row"><span>Chinsu cá cơm</span><strong>8tr ₫</strong></div>
+              <div class="buy-row"><span>Wake-Up 247</span><strong>5tr ₫</strong></div>
+              <div class="buy-row"><span>SKU bán chạy khác</span><strong>5tr ₫</strong></div>
+              <div class="buy-row buy-row-x"><span>SKU X (chậm)</span><strong>0 ₫ · tránh</strong></div>
+            </div>
+            <p class="bubble-cap">Mỗi gợi ý dựa trên 90 ngày dữ liệu POS, chu kỳ tồn kho, và lịch sử thanh toán NPP MCH.</p>
+          </div>
+        </div>
+
+        <div class="aic-input">
+          <input type="text" placeholder="Hỏi về cửa hàng của bạn…" id="aicInput" />
+          <button class="aic-send">Gửi</button>
+        </div>
+        <div class="aic-suggest">
+          <button class="suggest-pill">Tuần sau bán mạnh SKU nào?</button>
+          <button class="suggest-pill">Có nên giảm giá Wake-Up?</button>
+          <button class="suggest-pill">Lan có biểu hiện gì lạ?</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-card">
+      <span class="why-tag">Vì sao quan trọng</span>
+      <p>AI hữu ích vì <strong>WinX có dữ liệu</strong> mà MoMo, ZaloPay, ShopeePay không có: POS thật, lịch sử mua MCH, chi NCC, hành vi nhân viên, hành vi tín dụng. AI là sản phẩm — dữ liệu là rào cản.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SCENE 7: TCB CREDIT COCKPIT ================== -->
+<section class="scene scene-tcb" id="scene-7" data-scene="7">
+  <div class="container">
+    <div class="scene-header">
+      <div class="scene-num scene-num-tcb">Cảnh 07 · góc nhìn TCB</div>
+      <h2 class="section-title">Cùng cửa hàng đó. <span class="ink-tcb">Góc nhìn của ngân hàng.</span></h2>
+      <p class="section-lede">
+        Bộ phận RM của Techcombank thấy Tạp hóa Minh Anh không phải qua hồ sơ vay, mà qua dữ liệu thương mại 90 ngày.
+        Đây là cách ngân hàng kiếm lợi nhuận thật: không phải từ QR, mà từ tín dụng SME tốt hơn.
+      </p>
+    </div>
+
+    <div class="tcb-stage">
+      <div class="desktop-frame">
+        <div class="desktop-bar">
+          <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+          <span class="desktop-url">tcb-cockpit.techcombank.vn / merchants / WX-00872</span>
+        </div>
+        <div class="desktop-screen">
+          <div class="tcb-topbar">
+            <div class="tcb-brand"><span class="tcb-mark">TCB</span><span>Merchant Cockpit</span></div>
+            <div class="tcb-rm">RM: Phạm Quốc Tuấn · HCMC SME 04</div>
+          </div>
+
+          <div class="tcb-grid">
+            <div class="tcb-merchant">
+              <div class="tcb-card-head">Hồ sơ thương nhân</div>
+              <div class="tcb-merchant-row">
+                <div class="tcb-mer-avatar">MA</div>
+                <div>
+                  <strong>Tạp hóa Minh Anh</strong>
+                  <span>HKD · 8101234567 · Q.Bình Tân, HCMC</span>
+                  <span class="tcb-mer-tag tcb-mer-tag-on">B+ · pre-approved</span>
+                </div>
+              </div>
+              <div class="tcb-row"><span>Doanh số 90 ngày</span><strong>720 triệu ₫</strong></div>
+              <div class="tcb-row"><span>Tỷ lệ thu QR</span><strong>61%</strong></div>
+              <div class="tcb-row"><span>Lịch sử mua MCH</span><strong>210 triệu ₫</strong></div>
+              <div class="tcb-row"><span>Đúng hạn thanh toán</span><strong class="ok-text">96%</strong></div>
+              <div class="tcb-row"><span>Biến động tiền mặt</span><strong>Trung bình</strong></div>
+              <div class="tcb-row"><span>Vòng tồn kho</span><strong>18 ngày</strong></div>
+            </div>
+
+            <div class="tcb-flow">
+              <div class="tcb-card-head">Dòng tiền 90 ngày</div>
+              <div class="flow-chart" id="flowChart">
+                <svg viewBox="0 0 600 220" preserveAspectRatio="none" class="flow-svg">
+                  <defs>
+                    <linearGradient id="ftFill" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0" stop-color="#DA0F22" stop-opacity="0.25"/>
+                      <stop offset="1" stop-color="#DA0F22" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path class="flow-area" d="M0,180 C40,160 80,140 120,150 C160,160 200,120 240,100 C280,80 320,110 360,95 C400,80 440,60 480,55 C520,50 560,40 600,35 L600,220 L0,220 Z" fill="url(#ftFill)"/>
+                  <path class="flow-line" d="M0,180 C40,160 80,140 120,150 C160,160 200,120 240,100 C280,80 320,110 360,95 C400,80 440,60 480,55 C520,50 560,40 600,35" fill="none" stroke="#DA0F22" stroke-width="2.5"/>
+                </svg>
+                <div class="flow-axis">
+                  <span>Th2</span><span>Th3</span><span>Th4</span><span>Th5</span>
+                </div>
+              </div>
+              <div class="flow-stats">
+                <div><span>QR</span><strong>61%</strong></div>
+                <div><span>Tiền mặt</span><strong>32%</strong></div>
+                <div><span>Khác</span><strong>7%</strong></div>
+              </div>
+            </div>
+
+            <div class="tcb-score">
+              <div class="tcb-card-head">Chấm điểm tín dụng</div>
+              <div class="score-bar">
+                <div class="score-meta">
+                  <span>Hạng B+</span>
+                  <span>Nguồn trả: thu QR hằng ngày</span>
+                </div>
+                <div class="score-track">
+                  <div class="score-fill" style="--w:74%"></div>
+                  <div class="score-marker" style="left:74%">74</div>
+                </div>
+                <div class="score-axis"><span>D</span><span>C</span><span>B</span><span>B+</span><span>A</span><span>A+</span></div>
+              </div>
+              <div class="tcb-row"><span>Doanh số / chu kỳ</span><strong>+ 12,4%</strong></div>
+              <div class="tcb-row"><span>NPP rebate active</span><strong class="ok-text">Có</strong></div>
+              <div class="tcb-row"><span>POS reconcile rate</span><strong class="ok-text">99,3%</strong></div>
+            </div>
+
+            <div class="tcb-offer">
+              <div class="tcb-card-head">Đề xuất hạn mức</div>
+              <div class="offer-amount">
+                <span>Vốn lưu động</span>
+                <strong>100 triệu ₫</strong>
+                <span class="offer-tenor">12 tháng · LS 9,5%/năm</span>
+              </div>
+              <div class="offer-row"><span>Trả nợ chính</span><strong>Auto-sweep 8% thu QR/ngày</strong></div>
+              <div class="offer-row"><span>Trả góp ước tính</span><strong>8,7 triệu ₫/tháng</strong></div>
+              <div class="offer-row"><span>Thời gian xét</span><strong>1,5 – 2 giây · auto KYB</strong></div>
+              <div class="offer-warn">⚠ Cấu trúc auto-sweep cần rà soát pháp lý trước khi triển khai diện rộng.</div>
+              <div class="offer-actions">
+                <button class="btn-tcb-ghost">Hỏi merchant</button>
+                <button class="btn-tcb-primary">Phê duyệt 100tr</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-card why-card-tcb">
+      <span class="why-tag why-tag-tcb">Vì sao quan trọng</span>
+      <p>Đây là cách TCB kiếm tiền — không phải từ QR (free), mà từ <strong>chấm điểm SME tốt hơn 10×</strong> nhờ dữ liệu thương mại WinX. Masan giữ 19,7% TCB; vòng giá trị quay lại qua cổ phần.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SCENE 8: COMPLIANCE CONSOLE ================== -->
+<section class="scene scene-light" id="scene-8" data-scene="8">
+  <div class="container">
+    <div class="scene-header">
+      <div class="scene-num">Cảnh 08 · góc nhìn pháp lý</div>
+      <h2 class="section-title">Kiến trúc tuân thủ <span class="ink-accent">được nhìn thấy</span>.</h2>
+      <p class="section-lede">
+        Mọi câu hỏi pháp lý đều quay lại: "Đây có phải dịch vụ thu/chi hộ không?" Câu trả lời nằm trong console này.
+        Phase 0 chạy <strong>bank-direct</strong>; module MBC collection-on-behalf để dành, kích hoạt sau khi remediation hoàn tất.
+      </p>
+    </div>
+
+    <div class="comp-stage">
+      <div class="comp-toggle">
+        <button class="ct-btn ct-active" data-mode="1">Mode 1 · Bank-direct (Phase 0)</button>
+        <button class="ct-btn" data-mode="2">Mode 2 · MBC thu/chi hộ (sau)</button>
+      </div>
+
+      <div class="comp-panel" id="compPanel">
+        <!-- Mode 1 view -->
+        <div class="comp-view comp-view-on" data-view="1">
+          <div class="comp-grid">
+            <div class="comp-card comp-card-ok">
+              <span class="comp-tag comp-tag-ok">Đang dùng</span>
+              <h3>Bank-direct mode</h3>
+              <ul>
+                <li><span>Tiền giữ ở</span><strong>Tài khoản TCB của HKD</strong></li>
+                <li><span>Vai trò WinX</span><strong>UX · quy trình · đối soát · AI</strong></li>
+                <li><span>License MBC</span><strong>Chưa kích hoạt</strong></li>
+                <li><span>Hợp đồng</span><strong>HKD ↔ TCB · WinX là phần mềm</strong></li>
+              </ul>
+              <span class="comp-status">Trạng thái: đề xuất cho Phase 0</span>
+            </div>
+            <div class="comp-flow-card">
+              <h4 class="comp-flow-title">Sơ đồ luồng tiền</h4>
+              <div class="comp-flow-diagram">
+                <div class="cf-node cf-customer"><span>Khách hàng</span></div>
+                <div class="cf-arrow cf-arrow-r">QR / Thẻ</div>
+                <div class="cf-node cf-tcb">
+                  <span>Techcombank</span>
+                  <small>Tài khoản HKD Minh Anh</small>
+                </div>
+                <div class="cf-arrow cf-arrow-r">Lệnh chi (do chủ phê duyệt)</div>
+                <div class="cf-node cf-supplier"><span>NPP MCH</span></div>
+                <div class="cf-overlay">
+                  <span class="cf-winx-label">WinX</span>
+                  <span class="cf-winx-cap">phần mềm · không giữ tiền</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mode 2 view -->
+        <div class="comp-view" data-view="2">
+          <div class="comp-grid">
+            <div class="comp-card comp-card-warn">
+              <span class="comp-tag comp-tag-warn">Tạm hoãn</span>
+              <h3>MBC collection-on-behalf mode</h3>
+              <ul>
+                <li><span>Tiền giữ ở</span><strong>Tài khoản đảm bảo MBC</strong></li>
+                <li><span>Sub-ledger</span><strong>Nội bộ MBC</strong></li>
+                <li><span>Use case</span><strong>Chia hộ thu, marketplace, payroll, multi-party</strong></li>
+                <li><span>License</span><strong>MBC thu/chi hộ</strong></li>
+              </ul>
+              <span class="comp-status comp-status-warn">Trạng thái: chờ remediation pháp lý</span>
+            </div>
+            <div class="comp-warn-stack">
+              <h4>Cảnh báo tuân thủ</h4>
+              <div class="warn-row">
+                <span class="warn-num">1</span>
+                <p>Dịch vụ thu/chi hộ <strong>chưa triển khai thực tế</strong> dù đã có license &gt; 2 năm — rủi ro thu hồi license vì không hoạt động.</p>
+              </div>
+              <div class="warn-row">
+                <span class="warn-num">2</span>
+                <p>Cần <strong>ký hợp tác với TCB</strong> (và ngân hàng khác) để mở <strong>tài khoản đảm bảo riêng biệt</strong> cho dịch vụ thu/chi hộ.</p>
+              </div>
+              <div class="warn-row">
+                <span class="warn-num">3</span>
+                <p>Tài khoản đảm bảo của ví điện tử <strong>không được trộn lẫn</strong> với tài khoản đảm bảo của thu/chi hộ.</p>
+              </div>
+              <div class="warn-row">
+                <span class="warn-num">4</span>
+                <p>Yêu cầu <strong>bằng chứng bảo mật cấp 3</strong> (Level-3 InfoSec) trước khi vận hành.</p>
+              </div>
+              <div class="warn-row">
+                <span class="warn-num">5</span>
+                <p>Phải có cơ chế <strong>nhận, xử lý, hủy giao dịch</strong> và tính kết quả thu/chi rõ ràng theo license.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <span class="why-tag">Vì sao quan trọng</span>
+        <p>Phòng họp sẽ thấy: <strong>chúng tôi không né pháp lý</strong>. Kiến trúc sản phẩm mặc định tuân thủ. Mode 2 là tài sản chiến lược chờ kích hoạt — không phải phụ thuộc của Phase 0.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== CLOSING / ASK ================== -->
+<section class="closing" id="closing">
+  <div class="container closing-grid">
+    <div class="closing-left">
+      <span class="eyebrow"><span class="dot"></span> Đề xuất Phase 0</span>
+      <h2 class="closing-title">
+        Không phải một ví tiêu dùng.<br/>
+        Một <span class="ink-accent">hệ điều hành tài chính</span> cho thương nhân Masan.
+      </h2>
+      <p class="closing-lede">
+        Đề xuất 90 ngày Phase 0 cho WinX Business: tài khoản SME do TCB hậu thuẫn,
+        đường thu kết nối WinX POS, phân quyền nhân viên, trả NCC, đối soát, báo cáo AI,
+        và pre-qualification tín dụng TCB. MBC thu/chi hộ là remediation song song,
+        không phải ràng buộc của Phase 0.
+      </p>
+
+      <div class="closing-pills">
+        <span class="pill pill-strong">90 ngày</span>
+        <span class="pill">3 tỉnh thí điểm</span>
+        <span class="pill">WinX POS-linked</span>
+        <span class="pill">TCB underwriting</span>
+        <span class="pill">MCH distributor collections</span>
+      </div>
+    </div>
+
+    <div class="closing-right">
+      <div class="ask-card">
+        <span class="ask-tag">Phase 0 scope</span>
+        <ul class="ask-list">
+          <li><span class="ok-dot ok-strong">✓</span> UX tài khoản SME do TCB hậu thuẫn</li>
+          <li><span class="ok-dot ok-strong">✓</span> Đường thu liên kết WinX POS</li>
+          <li><span class="ok-dot ok-strong">✓</span> Phân quyền nhân viên + log audit</li>
+          <li><span class="ok-dot ok-strong">✓</span> Trả NCC + đối soát hóa đơn</li>
+          <li><span class="ok-dot ok-strong">✓</span> Báo cáo AI hàng tuần</li>
+          <li><span class="ok-dot ok-strong">✓</span> Pre-qualification tín dụng TCB</li>
+          <li><span class="ok-dot ok-muted">○</span> MBC thu/chi hộ · remediation song song</li>
+        </ul>
+        <div class="ask-tagline">
+          "WinX Business: Aspire UX + Ramp employee controls + Square POS context + Bill.com AP/AR + TCB credit + Masan commerce graph + AI agent. Bản địa hóa cho SME Việt Nam."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== FOOTER ================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><svg viewBox="0 0 36 36" width="22" height="22"><rect width="36" height="36" rx="9" fill="currentColor"/><path d="M9 11l4.5 14M22.5 11L18 25M14 11l4 8 4-8" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+      <span class="footer-name">WinX <strong>Business</strong></span>
+    </div>
+    <div class="footer-meta">
+      <span>Demo nội bộ · Masan x Techcombank · 2026</span>
+      <span class="footer-disc">Mọi số liệu trong demo là minh họa cho mục đích thuyết trình nội bộ. Không phải sản phẩm thương mại.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- side dot nav (desktop) -->
+<aside class="side-nav" aria-hidden="true">
+  <a href="#hero" class="sn-dot" data-target="hero" title="Mở đầu"></a>
+  <a href="#scene-1" class="sn-dot" data-target="scene-1" title="Mở tài khoản"></a>
+  <a href="#scene-2" class="sn-dot" data-target="scene-2" title="Phân quyền"></a>
+  <a href="#scene-3" class="sn-dot" data-target="scene-3" title="POS &amp; QR"></a>
+  <a href="#scene-4" class="sn-dot" data-target="scene-4" title="Dashboard"></a>
+  <a href="#scene-5" class="sn-dot" data-target="scene-5" title="Trả NCC"></a>
+  <a href="#scene-6" class="sn-dot" data-target="scene-6" title="AI"></a>
+  <a href="#scene-7" class="sn-dot" data-target="scene-7" title="Tín dụng TCB"></a>
+  <a href="#scene-8" class="sn-dot" data-target="scene-8" title="Tuân thủ"></a>
+  <a href="#closing" class="sn-dot" data-target="closing" title="Phase 0"></a>
+</aside>
+
+<script src="app.js" defer></script>
+</body>
+</html>
