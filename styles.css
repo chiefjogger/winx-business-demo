@@ -554,10 +554,21 @@ button{ font-family:inherit; cursor:pointer; }
 }
 .persona-photo{
   flex-shrink: 0;
+  width: 132px;
+  height: 132px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--coral-soft);
+  box-shadow: 0 8px 22px rgba(199,62,58,.18);
+  position: relative;
 }
+.persona-photo img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 18% 28%;
+  transition: transform .6s cubic-bezier(.2,.8,.2,1);
+}
+.persona-card:hover .persona-photo img{ transform: scale(1.04); }
 .persona-meta{ display:flex; flex-direction:column; gap: 6px; }
 .persona-name{ font-family: var(--ff-display); font-weight: 800; font-size: 22px; }
 .persona-role{ font-size: 13px; color: var(--ink-dim); margin-bottom: 6px; }
@@ -826,7 +837,19 @@ button{ font-family:inherit; cursor:pointer; }
   border-radius: 14px;
   border: 1px solid var(--line);
 }
-.ob-id-photo{ flex-shrink: 0; border-radius: 50%; overflow: hidden; border: 2px solid white; }
+.ob-id-photo{
+  flex-shrink: 0;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(11,18,32,.08);
+}
+.ob-id-photo img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 18% 28%;
+}
 .ob-id-meta{ display:flex; flex-direction: column; gap: 2px; font-size: 12px; }
 .ob-id-name{ font-weight: 800; color: var(--ink); font-size: 13px; }
 .ob-id-line{ color: var(--ink-dim); }
@@ -1036,6 +1059,47 @@ button{ font-family:inherit; cursor:pointer; }
 /* =====================================================
    SCENE 3: POS / QR
    ===================================================== */
+.pos-photo{
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto 36px;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0,0,0,.5);
+  border: 1px solid var(--dark-line);
+}
+.pos-photo img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+.pos-photo::after{
+  content:'';
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, transparent 50%, rgba(11,20,38,.78) 100%);
+  pointer-events: none;
+}
+.pos-photo-cap{
+  position: absolute;
+  bottom: 14px; left: 18px; right: 18px;
+  z-index: 2;
+  font-size: 12.5px;
+  letter-spacing: .04em;
+  color: rgba(255,255,255,.85);
+  font-style: italic;
+  display:flex; align-items:center; gap: 8px;
+}
+.pos-photo-cap::before{
+  content:'';
+  width: 8px; height: 8px;
+  background: var(--coral);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(199,62,58,.25);
+}
+
 .pos-stage{
   position: relative;
   display: flex;
@@ -1505,6 +1569,30 @@ button{ font-family:inherit; cursor:pointer; }
 .btn-pill-on{ background: var(--coral); border-color: transparent; }
 .btn-pill-on:hover{ background: var(--coral-2); }
 
+.owner-quote{
+  margin-top: 16px;
+  padding: 12px 14px 12px 18px;
+  background: rgba(255,255,255,.04);
+  border-left: 2px solid rgba(255,180,170,.6);
+  border-radius: 8px;
+  display:flex; gap: 10px; align-items: flex-start;
+  position: relative;
+}
+.owner-quote .oq-icon{
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  color: rgba(255,180,170,.85);
+  line-height: 1;
+  margin-top: -4px;
+}
+.owner-quote p{
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: rgba(255,255,255,.85);
+  font-style: italic;
+}
+
 /* =====================================================
    SCENE 5: PAY SUPPLIER
    ===================================================== */
@@ -1758,16 +1846,37 @@ button{ font-family:inherit; cursor:pointer; }
   padding: 4px 12px;
 }
 .buy-row{
-  display:flex; justify-content: space-between; align-items: center;
+  display: grid;
+  grid-template-columns: 30px 1fr auto;
+  gap: 10px;
+  align-items: center;
   padding: 7px 0;
   border-bottom: 1px solid var(--line);
   font-size: 13px;
 }
 .buy-row:last-child{ border-bottom: 0; }
-.buy-row span{ color: var(--ink-2); }
+.buy-row .buy-name{ color: var(--ink-2); }
 .buy-row strong{ font-family: var(--ff-mono); color: var(--ink); font-weight: 700; }
 .buy-row-x{ opacity: .55; }
 .buy-row-x strong{ color: var(--ink-mute); text-decoration: line-through; }
+
+.prod-chip{
+  width: 30px; height: 30px;
+  border-radius: 7px;
+  display:flex; align-items:center; justify-content:center;
+  color: white;
+  font-family: var(--ff-display);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: -.01em;
+  box-shadow: inset 0 -2px 4px rgba(0,0,0,.18), 0 1px 2px rgba(0,0,0,.06);
+  flex-shrink: 0;
+}
+.prod-omachi{ background: linear-gradient(135deg, #E15226 0%, #B8341A 100%); }
+.prod-chinsu{ background: linear-gradient(135deg, #D9362A 0%, #9F1D14 100%); }
+.prod-wakeup{ background: linear-gradient(135deg, #F4B400 0%, #C68900 100%); color: #2A1A00; }
+.prod-vinacafe{ background: linear-gradient(135deg, #4F2D1E 0%, #2C1410 100%); }
+.prod-x{ background: var(--ink-mute); }
 .bubble-cap{ font-size: 11.5px; color: var(--ink-dim); font-style: italic; }
 
 .aic-input{
@@ -2434,6 +2543,13 @@ body.is-on-dark .sn-dot.is-active{ background: var(--coral); }
   .ai-chip{ margin: auto 14px 18px; padding: 10px 12px; font-size: 11.5px; }
 
   .float-card{ display: none; }
+  .float-card.float-ai{
+    display: flex;
+    position: static;
+    margin: 18px 14px 0;
+    max-width: none;
+    animation: none;
+  }
 
   .scene{ padding: 64px 0; }
   .section-title{ font-size: 26px; }
@@ -2447,8 +2563,11 @@ body.is-on-dark .sn-dot.is-active{ background: var(--coral); }
   .pos-bottom{ grid-template-columns: repeat(2, 1fr); gap: 10px; }
 
   .dash-panel{ padding: 16px; }
-  .kpi-row{ grid-template-columns: 1fr; gap: 10px; }
-  .kpi-value{ font-size: 22px; }
+  .kpi-row{ grid-template-columns: 1fr 1fr; gap: 10px; }
+  .kpi{ padding: 12px; }
+  .kpi-value{ font-size: 18px; }
+  .kpi-label{ font-size: 10px; }
+  .kpi-delta{ font-size: 10.5px; }
   .dash-grid{ grid-template-columns: 1fr; }
   .dash-card-wide, .dash-card-ai{ grid-column: span 1; }
 
