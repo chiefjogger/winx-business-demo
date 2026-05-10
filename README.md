@@ -1,7 +1,7 @@
 # WinX Business · Demo
 
 Single-page interactive demo for **WinX for Business** — the AI operating account
-for Vietnamese SMEs, powered by Techcombank and Masan commerce data.
+for Vietnamese SMEs, bank-agnostic and built on the Masan commerce graph.
 
 Live: https://chiefjogger.github.io/winx-business-demo/
 
