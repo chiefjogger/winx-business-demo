@@ -1,22 +1,21 @@
-# WinX Business · Demo
+# WinX Business — demo (legacy / redirected)
 
-Single-page interactive demo for **WinX for Business** — the AI operating account
-for Vietnamese SMEs, bank-agnostic and built on the Masan commerce graph.
+This repo has been consolidated into [chiefjogger/winx-platform-demo](https://github.com/chiefjogger/winx-platform-demo).
 
-Live: https://chiefjogger.github.io/winx-business-demo/
+Live: **https://chiefjogger.github.io/winx-platform-demo/**
 
-The demo is in Vietnamese. Static HTML + CSS + JS, no build step.
+The consolidated site has:
+- **Landing** (`index.html`) — three-track thesis: MCH anchor SCF Phase 0 → Mintifi-mechanic Phase 1 (wholesaler + WinX QR-out + POS sell-out) → spin-out optionality Phase 2.
+- **Cockpit demo** (`demo.html`) — 3-column live cockpit: WinX POS · WinX Business · WinX AI on one merchant record.
 
-## Structure
+The 8-scene scrolling walkthrough that used to live here has been folded into the landing page sections; the interactive product is the cockpit. This page now redirects to the consolidated site.
 
-- `index.html` — narrative + 8 scenes (onboarding · permissions · POS QR · dashboard · pay supplier · AI weekly · TCB credit cockpit · compliance console)
-- `styles.css` — design system, responsive
-- `app.js` — onboarding stepper, POS QR flow, approval flow, compliance toggle, AI chat, scroll spy
+## Why consolidated
 
-## Local
+Two separate demos diverged on positioning. The new single site:
+- Anchors on the Mintifi mechanic (settlement-rail, not order-rail), not Wise/Mercury/Aspire.
+- Reframes credit from generic 100M working capital loan to 30M / 21-day / 1.2%/period MCH restock line, invite-only.
+- Adds the multi-anchor surfaces (payment-rail-out, wholesaler-as-proxy) that don't require competing brand-anchor consent.
+- Carries the captive uplift case (USD ~110M FY34E group EBITDA) as the load-bearing IC argument.
 
-Open `index.html` in a browser. No server needed.
-
-## Notes
-
-Numbers in the demo are illustrative. Not a commercial product.
+Sources: SEA Ltd / Monee v1; WinX Business Memo v4; Finance OS v3; SEA Fintech PMF VN GT v2; Comparison Memo v1.
